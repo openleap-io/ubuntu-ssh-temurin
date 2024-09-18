@@ -41,7 +41,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            aoudiamoncef/ubuntu-sshd
+            openleap-io/ubuntu-sshd
             ghcr.io/${{ github.repository }}/ubuntu-sshd
 
       - name: Build and push to Docker Hub and GitHub Container Registry
@@ -51,7 +51,7 @@ jobs:
           context: .
           push: true
           tags: |
-            aoudiamoncef/ubuntu-sshd:latest
+            openleap-io/ubuntu-sshd:latest
             ghcr.io/${{ github.repository }}/ubuntu-sshd:latest
           labels: ${{ steps.meta.outputs.labels }}
 
