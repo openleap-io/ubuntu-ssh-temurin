@@ -1,20 +1,22 @@
 # SSH-Enabled Ubuntu Docker Image
 
-[![Docker Image CI](https://github.com/aoudiamoncef/ubuntu-sshd/actions/workflows/ci.yml/badge.svg)](https://github.com/aoudiamoncef/ubuntu-sshd/actions/workflows/ci.yml)
-[![Docker Image Deployment](https://github.com/aoudiamoncef/ubuntu-sshd/actions/workflows/cd.yml/badge.svg)](https://github.com/aoudiamoncef/ubuntu-sshd/actions/workflows/cd.yml)
-[![Docker Pulls](https://img.shields.io/docker/pulls/aoudiamoncef/ubuntu-sshd.svg)](https://hub.docker.com/r/aoudiamoncef/ubuntu-sshd)
-[![Maintenance](https://img.shields.io/badge/Maintained-Yes-green.svg)](https://github.com/aoudiamoncef/ubuntu-sshd)
+[![Docker Image CI](https://github.com/aoudiamoncef/ubuntu-sshd/actions/workflows/ci.yml/badge.svg)](https://github.com/openleap-io/ubuntu-sshd/actions/workflows/ci.yml)
+[![Docker Image Deployment](https://github.com/aoudiamoncef/ubuntu-sshd/actions/workflows/cd.yml/badge.svg)](https://github.com/openleap-io/ubuntu-sshd/actions/workflows/cd.yml)
+[![Docker Pulls](https://img.shields.io/docker/pulls/aoudiamoncef/ubuntu-sshd.svg)](https://hub.docker.com/r/openleap-io/ubuntu-sshd)
+[![Maintenance](https://img.shields.io/badge/Maintained-Yes-green.svg)](https://github.com/openleap-io/ubuntu-sshd)
 
-This Docker image provides an Ubuntu 24.04 base with SSH server enabled. It allows you to easily create SSH-accessible containers via SSH keys or with a default username and password.
+This Docker image provides an Ubuntu 24.04 base with SSH server enabled, maven and temurin 23 jdk installed. 
+It allows you to easily create SSH-accessible containers via SSH keys or with a default username and password.
+As versatile container it can be used as gitlab ci/cd executer image for maven builds and Dockerhub deploys. 
 
 ## Usage
 
 ### Cloning the Repository
 
-To get started, clone the GitHub  [repository](https://github.com/aoudiamoncef/ubuntu-sshd) containing the Dockerfile and scripts:
+To get started, clone the GitHub  [repository](https://github.com/openleap-io/ubuntu-sshd) containing the Dockerfile and scripts:
 
 ```bash
-git clone https://github.com/aoudiamoncef/ubuntu-sshd
+git clone https://github.com/openleap-io/ubuntu-sshd
 cd ubuntu-sshd
 ```
 
