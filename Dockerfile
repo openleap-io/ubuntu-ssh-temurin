@@ -6,6 +6,14 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV SSH_USERNAME=ubuntu
 ENV PASSWORD=changeme
 
+# Install wget first
+RUN apt-get update \
+    && apt-get install -y wget apt-transport-https gpg
+
+# Add Eclipse Adoptioum GPG key and apt repository
+RUN wget -qO - https://packages.adoptium.net/artifactory/api/gpg/key/public | gpg --dearmor | tee /etc/apt/trusted.gpg.d/adoptium.gpg > /dev/null \
+    && echo "deb https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | tee /etc/apt/sources.list.d/adoptium.list
+ 
 # Install OpenSSH server and clean up
 RUN apt-get update \
     && apt-get install -y openssh-server iputils-ping telnet iproute2 maven temurin-21-jdk \
