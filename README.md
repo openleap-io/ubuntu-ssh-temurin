@@ -13,10 +13,10 @@ As versatile container it can be used as gitlab ci/cd executer image for maven b
 
 ### Cloning the Repository
 
-To get started, clone the GitHub  [repository](https://github.com/openleap-io/ubuntu-sshd) containing the Dockerfile and scripts:
+To get started, clone the GitHub  [repository](https://github.com/openleap-io/ubuntu-ssh-temurin) containing the Dockerfile and scripts:
 
 ```bash
-git clone https://github.com/openleap-io/ubuntu-sshd
+git clone https://github.com/openleap-io/ubuntu-ssh-temurin
 cd ubuntu-sshd
 ```
 
@@ -25,7 +25,7 @@ cd ubuntu-sshd
 Build the Docker image from within the cloned repository directory:
 
 ```bash
-docker build -t my-ubuntu-sshd:latest .
+docker build -t my-ubuntu-ssh-temurin:latest .
 ```
 
 ### Running a Container
@@ -33,7 +33,7 @@ docker build -t my-ubuntu-sshd:latest .
 To run a container based on the image, use the following command:
 
 ```bash
-docker run -d -p host-port:22 -e SSH_USERNAME=myuser -e PASSWORD=mysecretpassword -e AUTHORIZED_KEYS="$(cat path/to/authorized_keys_file)" my-ubuntu-sshd:latest
+docker run -d -p host-port:22 -e SSH_USERNAME=myuser -e PASSWORD=mysecretpassword -e AUTHORIZED_KEYS="$(cat path/to/authorized_keys_file)" my-ubuntu-ssh-temurin:latest
 ```
 
 - `-d` runs the container in detached mode.
