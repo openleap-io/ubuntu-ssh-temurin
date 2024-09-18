@@ -2,7 +2,7 @@
 
 [![Docker Image CI](https://github.com/aoudiamoncef/ubuntu-sshd/actions/workflows/ci.yml/badge.svg)](https://github.com/openleap-io/ubuntu-sshd/actions/workflows/ci.yml)
 [![Docker Image Deployment](https://github.com/aoudiamoncef/ubuntu-sshd/actions/workflows/cd.yml/badge.svg)](https://github.com/openleap-io/ubuntu-sshd/actions/workflows/cd.yml)
-[![Docker Pulls](https://img.shields.io/docker/pulls/aoudiamoncef/ubuntu-sshd.svg)](https://hub.docker.com/r/openleap-io/ubuntu-sshd)
+[![Docker Pulls](https://img.shields.io/docker/pulls/aoudiamoncef/ubuntu-sshd.svg)](https://hub.docker.com/r/openleap/ubuntu-sshd)
 [![Maintenance](https://img.shields.io/badge/Maintained-Yes-green.svg)](https://github.com/openleap-io/ubuntu-sshd)
 
 This Docker image provides an Ubuntu 24.04 base with SSH server enabled, maven and temurin 23 jdk installed. 
