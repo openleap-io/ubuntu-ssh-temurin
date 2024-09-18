@@ -8,7 +8,7 @@ ENV PASSWORD=changeme
 
 # Install OpenSSH server and clean up
 RUN apt-get update \
-    && apt-get install -y openssh-server iputils-ping telnet iproute2 \
+    && apt-get install -y openssh-server iputils-ping telnet iproute2 maven temurin-21-jdk \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
