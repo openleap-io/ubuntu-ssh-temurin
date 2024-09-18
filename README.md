@@ -1,9 +1,9 @@
 # SSH-Enabled Ubuntu Docker Image
 
-[![Docker Image CI](https://github.com/openleap-io/ubuntu-sshd-temurin/actions/workflows/ci.yml/badge.svg)](https://github.com/openleap-io/ubuntu-sshd/actions/workflows/ci.yml)
-[![Docker Image Deployment](https://github.com/openleap-io/ubuntu-sshd-temurin/actions/workflows/cd.yml/badge.svg)](https://github.com/openleap-io/ubuntu-sshd/actions/workflows/cd.yml)
-[![Docker Pulls](https://img.shields.io/docker/pulls/openleap/ubuntu-sshd-temurin.svg)](https://hub.docker.com/r/openleap/ubuntu-ssh-temurin)
-[![Maintenance](https://img.shields.io/badge/Maintained-Yes-green.svg)](https://github.com/openleap-io/ubuntu-sshd)
+[![Docker Image CI](https://github.com/openleap-io/ubuntu-ssh-temurin/actions/workflows/ci.yml/badge.svg)](https://github.com/openleap-io/ubuntu-ssh-temurin/actions/workflows/ci.yml)
+[![Docker Image Deployment](https://github.com/openleap-io/ubuntu-ssh-temurin/actions/workflows/cd.yml/badge.svg)](https://github.com/openleap-io/ubuntu-ssh-temuring/actions/workflows/cd.yml)
+[![Docker Pulls](https://img.shields.io/docker/pulls/openleap/ubuntu-ssh-temurin.svg)](https://hub.docker.com/r/openleap/ubuntu-ssh-temurin)
+[![Maintenance](https://img.shields.io/badge/Maintained-Yes-green.svg)](https://github.com/openleap-io/ubuntu-ssh-temurin)
 
 This Docker image provides an Ubuntu 24.04 base with SSH server enabled, maven and temurin 23 jdk installed. 
 It allows you to easily create SSH-accessible containers via SSH keys or with a default username and password.
