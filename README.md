@@ -5,7 +5,7 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/openleap/ubuntu-ssh-temurin.svg)](https://hub.docker.com/r/openleap/ubuntu-ssh-temurin)
 [![Maintenance](https://img.shields.io/badge/Maintained-Yes-green.svg)](https://github.com/openleap-io/ubuntu-ssh-temurin)
 
-This Docker image provides an Ubuntu 24.04 base with SSH server enabled, maven and temurin 23 jdk installed. 
+This Docker image provides an Ubuntu 24.04 base with SSH server enabled, maven and temurin 21 jdk installed. 
 It allows you to easily create SSH-accessible containers via SSH keys or with a default username and password.
 As versatile container it can be used as gitlab ci/cd executer image for maven builds and Dockerhub deploys. 
 
