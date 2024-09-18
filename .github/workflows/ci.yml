@@ -26,13 +26,13 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            openleap/ubuntu-sshd
-            ghcr.io/${{ github.repository }}/ubuntu-sshd
+            openleap/ubuntu-ssh-temurin
+            ghcr.io/${{ github.repository }}/ubuntu-ssh-temurin
 
       - name: Build Docker image
         uses: docker/build-push-action@v5
         with:
           context: .
           push: false
-          tags: openleap/ubuntu-sshd:pr-${{ github.event.number }}
+          tags: openleap/ubuntu-ssh-temurin:pr-${{ github.event.number }}
           labels: ${{ steps.meta.outputs.labels }}

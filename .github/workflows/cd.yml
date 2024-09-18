@@ -41,8 +41,8 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            openleap/ubuntu-sshd
-            ghcr.io/${{ github.repository }}/ubuntu-sshd
+            openleap/ubuntu-ssh-temurin
+            ghcr.io/${{ github.repository }}/ubuntu-ssh-temurin
 
       - name: Build and push to Docker Hub and GitHub Container Registry
         id: build
@@ -51,14 +51,14 @@ jobs:
           context: .
           push: true
           tags: |
-            openleap/ubuntu-sshd:latest
-            ghcr.io/${{ github.repository }}/ubuntu-sshd:latest
+            openleap/uubuntu-ssh-temurin:latest
+            ghcr.io/${{ github.repository }}/ubuntu-ssh-temurin:latest
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Generate artifact attestation
         id: attest
         uses: actions/attest-build-provenance@v1
         with:
-          subject-name: ghcr.io/${{ github.repository }}/ubuntu-sshd
+          subject-name: ghcr.io/${{ github.repository }}/ubuntu-ssh-temurin
           subject-digest: ${{ steps.build.outputs.digest }}
           push-to-registry: true
