@@ -51,7 +51,7 @@ jobs:
           context: .
           push: true
           tags: |
-            openleap/uubuntu-ssh-temurin:latest
+            openleap/ubuntu-ssh-temurin:latest
             ghcr.io/${{ github.repository }}/ubuntu-ssh-temurin:latest
           labels: ${{ steps.meta.outputs.labels }}
 
